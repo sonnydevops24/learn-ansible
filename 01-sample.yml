@@ -1,4 +1,6 @@
-- hosts: all
-  tasks:
-    - ansible.builtin.debug:
+- name: Demo playbook
+  tasks: all
+  task:
+    - name: print hello world
+      ansible.builtin.debug:
         msg: Hello world
